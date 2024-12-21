@@ -1,0 +1,27 @@
+CREATE TABLE Usuario
+(
+  id INT AUTO_INCREMENT NOT NULL,
+  nome VARCHAR(70) NOT NULL,
+  telefone VARCHAR(20) NOT NULL,
+  email VARCHAR(70) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE Evento
+(
+  id INT AUTO_INCREMENT NOT NULL,
+  nome VARCHAR(70) NOT NULL,
+  data DATE NOT NULL,
+  duracao INT NOT NULL,
+  descricao TEXT,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE Confirmacao
+(
+  id_usuario INT NOT NULL,
+  id_evento INT NOT NULL,
+  PRIMARY KEY (id_usuario, id_evento),
+  FOREIGN KEY (id_usuario) REFERENCES Usuario(id),
+  FOREIGN KEY (id_evento) REFERENCES Evento(id)
+);
