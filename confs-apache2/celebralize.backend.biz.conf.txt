@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+
+        ServerName Celebralize.backend.biz
+
+        ServerAdmin caua.h@escolar.ifrn.edu.br
+        DocumentRoot /var/www/html/celebralize.backend.biz/
+
+        ErrorLog ${APACHE_LOG_DIR}/celebralize.backend.biz/error.log
+        CustomLog ${APACHE_LOG_DIR}/celebralize.backend.biz/access.log combined
+
+</VirtualHost>

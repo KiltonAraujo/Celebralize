@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+
+        ServerName Celebralize.com.br
+
+        ServerAdmin caua.h@escolar.ifrn.edu.br
+        DocumentRoot /var/www/html/celebralize.com.br/
+
+        ErrorLog ${APACHE_LOG_DIR}/celebralize.com.br/error.log
+        CustomLog ${APACHE_LOG_DIR}/celebralize.com.br/access.log combined
+
+</VirtualHost>
