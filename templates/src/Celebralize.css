@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    display: flex;
+    align-items: start;
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,p,a{
+    color: #272932;
+    font-family: "Poppins", serif;
+}
+
+h1{
+    font-size: 52px;
+    line-height: 79px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    
+}
+
+.colorido {
+    background-image: linear-gradient(90deg, #7CCADC, #897BA2, #D98080, #69B2A0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header{
+    width: 4em;
+    box-sizing: border-box;
+    padding-top: 2em;
+    height: 100vh;
+    background-color: #F8EFE6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav, header nav{
+    margin-top: 4em;
+}
+
+header nav, header nav ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+header nav ol li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #D2C2B5;
+}
+
+main{
+    background-color: #FCF8F5;
+    padding: 5em 8em;
+    height: 100vh;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+main section{
+    max-width: 200em;
+}
+
+main .destaque-home{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: stretch;
+}
+
+main .destaque-home div{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1
+}
+
+main .destaque-home figure {
+    flex: 1; /* Faz a imagem ocupar espaço proporcional */
+    display: flex;
+    align-items: center; /* Centraliza a imagem verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+  }
+  
+main .destaque-home figure img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+.botao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em 0.6em;
+    background-color: #272932;
+    color: #D9D9D9;
+    border-radius: 60px;
+    width: 147px;
+}
