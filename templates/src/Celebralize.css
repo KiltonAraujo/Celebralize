@@ -8,10 +8,8 @@ body, html{
     height: 100%;
 }
 body{
-    display: flex;
-    align-items: start;
     height: 100%;
-}
+} 
 
 li{list-style: none;}
 a{text-decoration: none;}
@@ -36,7 +34,7 @@ h1{
 }
 
 header{
-    width: 4em;
+    min-width: 4em;
     box-sizing: border-box;
     padding-top: 2em;
     height: 100%;
@@ -44,6 +42,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
 }
 
 header nav, header nav{
@@ -66,7 +65,42 @@ header nav ol li a{
     height: 40px;
     border-radius: 40px;
     background-color: #D2C2B5;
+    font-size: 18px;
+    font-weight: 500;
 }
+
+footer{
+    padding: 5em 8em;
+    background-color: #F8EFE6;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer nav ol, footer .sociais{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+footer nav ol, footer .sociais{gap:1em;}
+
+footer .sociais li a{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+}
+
+footer .sociais li:nth-child(1) a { background-color: #69B2A0; }
+footer .sociais li:nth-child(2) a { background-color: #7CCADC; }
+footer .sociais li:nth-child(3) a { background-color: #897BA2; }
+footer .sociais li:nth-child(4) a { background-color: #D98080; }
+
 
 main{
     background-color: #FCF8F5;
