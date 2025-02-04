@@ -18,14 +18,14 @@
                 <li><a href="Criar_evento.html"><img src="src/imagens/icones/criar-evento.svg" alt="crie um evento"></a></li>
                 <li><a href="Meus_eventos.html"><img src="src/imagens/icones/eventos.svg" alt="seus eventos"></a></li>
                 <li><a href="Meus_eventos.html"><img src="src/imagens/icones/eventos-convidados.svg" alt="eventos que te convidaram"></a></li>
-                <li><a href="Meus_eventos.html"><img src="src/imagens/icones/sair-icon.svg" alt="sair"></a></li>
+                <li><a href="index.html"><img src="src/imagens/icones/sair-icon.svg" alt="sair"></a></li>
             </ol>
         </nav>
     </header>
     <main>
         <section class="destaque-home">
-            <div>
-                <h1>Seus<span class="colorido">Eventos</span></h1>
+            <div id="seus-eventos">
+                <h1>Seus <span class="colorido">Eventos</span></h1>
                 <a href="Criar_evento.html" class="botao">Criar evento <img src="src/imagens/icones/criar-colorido.svg" alt="criar"></a>
             </div>
 
@@ -40,7 +40,7 @@
                     <div class="configs">
                         <figure>
                             <img src="src/imagens/icones/festa.svg">
-                            <a><img src="src/imagens/icones/_. ..svg"></a>
+                            <button type="button" class="opcoes"><img src="src/imagens/icones/_. ..svg"></button>
                         </figure>
                     </div>
                     <section>
@@ -51,16 +51,19 @@
                                 <p>54</p>
                             </figure>
                         </div>
-
+                        
                         <h3>Todminio dos queridões</h3>
                         <div class="data-hora">
                             <p><img src="src/imagens/icones/local-azul.svg">Casa do tod</p>
                             <p><img src="src/imagens/icones/horario-azul.svg">18h</p>
                         </div>
                     </section>
+                    <div class="acoes">
+                        <a href="Editar_evento.html">Editar</a>
+                        <button type="submit" class="excluir">Excluir</button>
+                    </div>
                 </li>
 
-                
             </ol>
         </section>
     </main>
@@ -82,5 +85,13 @@
             <li><a><img src="src/imagens/icones/instagram.svg" alt="instagram"></a></li>
         </ol>
     </footer>
+    <script>
+        document.querySelectorAll('.opcoes').forEach(button => {
+            button.addEventListener('click', () => {
+                const acoesDiv = button.closest('li').querySelector('.acoes');
+                acoesDiv.classList.toggle('visivel');
+            });
+        });
+    </script>
 </body>
 </html>

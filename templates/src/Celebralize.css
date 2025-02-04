@@ -374,6 +374,8 @@ main #eventos-convidados ol::-webkit-scrollbar-thumb {
     border-radius: 58px;
     height: 58px;
     box-sizing: border-box;
+    border: 2px solid transparent;
+    transition: border 0.4s;
     
 }
 
@@ -416,12 +418,17 @@ input[type="checkbox"]:checked::before {
 .criar-evento section form ol li p{
     color: #D2C2B5;
     font-size: 20px;
+    padding: 1em;
+}
+.criar-evento section form ol li:hover{
+    border: 2px solid #E3D6D6;
 }
 
 
-
 /* meus eventos  */
-
+#meus-eventos{
+    margin-top: 2em;
+}
 #meus-eventos .card-evento li {
     background-color: #7CCADC;
 }
@@ -432,4 +439,47 @@ input[type="checkbox"]:checked::before {
 
 #meus-eventos .card-evento li section  .data-hora p{
     color: #356773;
+}
+#seus-eventos{
+    max-height: 100px;
+}
+
+/* botao acoes */
+.opcoes{
+    cursor: pointer;
+    width: 15px;
+    background-color: transparent;
+}
+.opcoes.aberto{
+    background-color: transparent;
+}
+
+.acoes{
+    gap: 10px;
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px 0 15px 15px;
+    display: none;
+    position: absolute;
+    right: 0;
+}
+.acoes.visivel{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.acoes button{
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    color: #D98080;
+    background-color: transparent;
+}
+#meus-eventos .card-evento{
+    position: relative;
 }
