@@ -181,7 +181,23 @@ main #eventos-convidados{
     white-space: nowrap;
 }
 
+main #eventos-convidados .ver-mais{
+    padding-top: 2em;
+    padding-bottom: .6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+main #eventos-convidados .ver-mais h2{
+    padding: 0;
+}
+
+main #eventos-convidados .ver-mais a{
+    font-size: 16px;
+    color: #8C5050;
+    font-weight: 500;
+}
 
 main #eventos-convidados ol{
     gap: 1em;
@@ -424,20 +440,89 @@ input[type="checkbox"]:checked::before {
     border: 2px solid #E3D6D6;
 }
 
+/*eventos convidados*/
 
-/* meus eventos  */
-#meus-eventos{
-    margin-top: 2em;
+#eventos-convidados li{
+    background-color: #D98080;
 }
-#meus-eventos .card-evento li {
+
+#eventos-convidados li section h3{
+    color: #272932;
+    border-bottom: #8C5050 solid 2px;
+}
+
+#eventos-convidados  li section  .data-hora p{
+    color: #8C5050;
+}
+
+
+
+#eventos-convidados .meu li {
     background-color: #7CCADC;
+    width: 19%;
 }
 
-#meus-eventos .card-evento li section h3{
+#eventos-convidados .meu li section h3{
     border-bottom: #356773 solid 2px;
 }
 
-#meus-eventos .card-evento li section  .data-hora p{
+#eventos-convidados .meu li section .data-hora p{
+    color: #356773;
+}
+
+/*   login   */
+
+.login{
+    background-image: none;
+}
+
+.login section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+}
+
+.login section form{
+    max-width: 600px;
+}
+
+.login section form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em 1em;
+}
+
+destaque-login img{
+    max-width: 540px;
+    width: 40%;
+}
+
+
+
+/* meus eventos  */
+.meus-eventos{
+    margin-top: 2em;
+}
+.meus-eventos .card-evento li {
+    background-color: #7CCADC;
+
+.meus-eventos ol{
+    margin-top: 5em;
+    overflow: visible;
+    flex-wrap: wrap;
+}
+
+.meus-eventos .card-evento li {
+    background-color: #7CCADC;
+    width: 19%;
+}
+.meus-eventos .card-evento li section h3{
+    border-bottom: #356773 solid 2px;
+}
+
+.meus-eventos .card-evento li section  .data-hora p{
     color: #356773;
 }
 #seus-eventos{
@@ -447,7 +532,6 @@ input[type="checkbox"]:checked::before {
 /* botao acoes */
 .opcoes{
     cursor: pointer;
-    width: 15px;
     background-color: transparent;
 }
 .opcoes.aberto{
