@@ -127,12 +127,12 @@ main .destaque-home figure img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4em 0.6em;
+    padding: 0.2em 0.7em;
     background-color: #272932;
     color: #D9D9D9;
     border-radius: 60px;
     width: 147px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 main section h2{
@@ -162,7 +162,7 @@ main #eventos-convidados ol::-webkit-scrollbar{
 }
 
 main #eventos-convidados ol::-webkit-scrollbar-thumb {
-    background: #D2C2B5; /* Cor da barra */
+    background: #D2C2B5;
     border-radius: 20px;
 }
 
@@ -382,4 +382,20 @@ input[type="checkbox"]:checked::before {
 .criar-evento section form ol li p{
     color: #D2C2B5;
     font-size: 20px;
+}
+
+
+
+/* meus eventos  */
+
+#meus-eventos .card-evento li {
+    background-color: #7CCADC;
+}
+
+#meus-eventos .card-evento li section h3{
+    border-bottom: #356773 solid 2px;
+}
+
+#meus-eventos .card-evento li section  .data-hora p{
+    color: #356773;
 }
