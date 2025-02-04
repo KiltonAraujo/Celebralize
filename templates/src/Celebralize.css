@@ -322,6 +322,7 @@ main #eventos-convidados ol::-webkit-scrollbar-thumb {
 }
 
 .criar-evento section form input{
+    outline: none;
     width: 100%;
     max-width: 599px;
     min-width: 400px;
@@ -332,6 +333,12 @@ main #eventos-convidados ol::-webkit-scrollbar-thumb {
     padding: 1em;
     color: #D2C2B5;
     font-size: 20px;
+    border: 2px solid transparent;
+    transition: border 0.4s;
+}
+
+.criar-evento section form input:focus {
+    border: 2px solid #E3D6D6;
 }
 
 .criar-evento section form input[type="date"]::-webkit-calendar-picker-indicator,
