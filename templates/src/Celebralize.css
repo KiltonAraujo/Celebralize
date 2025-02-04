@@ -73,6 +73,7 @@ main{
     padding: 5em 8em;
     box-sizing: border-box;
     flex: 1;
+    max-width: 100%;
 }
 
 main section{
@@ -95,18 +96,32 @@ main .destaque-home div{
 }
 
 main .destaque-home figure {
-    flex: 1; /* Faz a imagem ocupar espaço proporcional */
+    flex: 1;
     display: flex;
-    align-items: center; /* Centraliza a imagem verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
+    justify-content: center;
   }
+
+@media screen and (max-width:1500px){
+    h1{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    
+}
+
+@media screen and (max-width:1200px){
+    h1{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    
+}
   
 main .destaque-home figure img {
     max-width: 100%;
     height: auto;
   }
-
-
 
 .botao{
     display: flex;
@@ -117,6 +132,7 @@ main .destaque-home figure img {
     color: #D9D9D9;
     border-radius: 60px;
     width: 147px;
+    font-size: 17px;
 }
 
 main section h2{
@@ -125,7 +141,23 @@ main section h2{
     padding-bottom: .6em;
 }
 
-main section ol{
+main #eventos-convidados{
+    width: 100%;
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal */
+    white-space: nowrap;
+}
+
+
+
+main #eventos-convidados ol{
+    gap: 1em;
+    overflow: hidden;
+    overflow-x: scroll;
+    max-width: 100%;
+    padding-bottom: 1em;
+}
+
+.card-evento{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +166,7 @@ main section ol{
     height: auto;
 }
 
-main section ol li{
+.card-evento li{
     width: 24%;
     height: auto;
     background-color: #D98080;
@@ -148,29 +180,29 @@ main section ol li{
     flex-direction: column;
 }
 
-main section ol li section div figure{
+.card-evento li section div figure{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main section ol li .configs figure{
+.card-evento li .configs figure{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main section ol li section .data{
+.card-evento li section .data{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main section ol li section .data figure{
+.card-evento li section .data figure{
     width:37px;
 }
 
-main section ol li section h3{
+.card-evento li section h3{
     font-size: 28.58px;
     line-height: 40px;
     color: #272932;
@@ -179,8 +211,153 @@ main section ol li section h3{
     margin-bottom: 1em;
     padding-bottom: 0.1em;
     border-bottom: #8C5050 solid 2px;
+    word-wrap: break-word; 
 }
-
 
 /* Pagina de criação de evento */
 
+.criar-evento{
+    background-image: url(imagens/backgrounds/Criar-eventos-background.svg);
+    background-repeat: no-repeat;
+    background-position: right center; /* Fixa na direita */
+    background-size: auto 100%; /* Ajusta a altura e mantém a proporção */
+    background-attachment: fixed;
+}
+
+.criar-evento section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 599px;
+
+}
+
+.criar-evento .botao{
+    width: 157px;
+}
+
+.criar-evento section .background-figuras{
+    flex: content;
+}
+
+.criar-evento section form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    flex: 1;
+    min-width: 500px;
+}
+
+.criar-evento section form input{
+    width: 100%;
+    max-width: 599px;
+    min-width: 400px;
+    background-color: #F8EFE6;
+    border-radius: 58px;
+    height: 58px;
+    box-sizing: border-box;
+    padding: 1em;
+    color: #D2C2B5;
+    font-size: 20px;
+}
+
+.criar-evento section form input[type="date"]::-webkit-calendar-picker-indicator,
+.criar-evento section form input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(9%) saturate(219%) hue-rotate(333deg) brightness(91%) contrast(91%);
+  cursor: pointer;
+}
+
+.criar-evento section input::placeholder {
+    color: #D2C2B5;
+    opacity: 1;
+  }
+  
+.criar-evento section input:-ms-input-placeholder { /* Para Internet Explorer */
+    color: #D2C2B5;
+  }
+  
+.criar-evento section input::-ms-input-placeholder { /* Para Edge */
+    color: #D2C2B5;
+  }
+  
+
+.criar-evento section form h2{
+    padding-top: 0.3em;
+    padding-bottom: 0;
+  }
+
+  
+.criar-evento section form ol{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 400px;
+    padding-right: 1em;
+}
+
+.criar-evento section form ol::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D2C2B5; /* Cor da barra */
+    border-radius: 20px;
+}
+
+.criar-evento section form ol li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 599px;
+    min-width: 400px;
+    background-color: #F8EFE6;
+    border-radius: 58px;
+    height: 58px;
+    box-sizing: border-box;
+    
+}
+
+.criar-evento section form ol li figure{
+    height: 58px;
+    width: 58px;
+    max-width: 58px;
+}
+
+.criar-evento section form ol li input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    margin-right: 1em;
+    border: none;
+    border-radius: 30px;
+    background-color: #E7DBD0;
+    position: relative;
+    
+}
+
+/* Adiciona o ícone de check "✔" */
+input[type="checkbox"]:checked::before {
+    content: "✔";
+    font-size: 16px;
+    color: #272932;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.criar-evento section form ol li figure img{
+    width: 100%;
+}
+
+.criar-evento section form ol li p{
+    color: #D2C2B5;
+    font-size: 20px;
+}

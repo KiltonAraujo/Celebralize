@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Celebralize</title>
+    <title>Editar evento</title>
 </head>
 <body>
     <header>
@@ -20,58 +20,72 @@
             </ol>
         </nav>
     </header>
-    <main>
-        <section class="pagina-edicao">
+    <main class="criar-evento">
+        <section>
             <form>
-                <h1>Criar <span class="colorido">Celebração</span></h1>
+                <h1>Editar <span class="colorido">Celebração</span></h1>
                 <input type="text" id="titulo" name="titulo" placeholder="Título" required>
 
                 <input type="text" id="local" name="local"  placeholder="Local" required>
-                
-                <label for="horario">Horário</label>
-                <input type="time" id="horario" name="horario" required><br>
 
-                <label for="data">Data</label>
-                <input type="date" id="data" name="data" required><br>
+                <input type="time" id="horario" name="horario" required>
+
+                <input type="date" id="data" name="data" placeholder="Quando?" required>
 
                 <h2>Quem vai junto?</h2>
                 <ol>
                     <li>
-                        <img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1">
+                        <figure><img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1"></figure>
                         <p>A mana dos roles</p>
-                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1" checked>
+                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1">
                     </li>
+
                     <li>
-                        <img src="src/imagens/enquanto_nao_tem_bd/foto2.svg" alt="foto de perfil do user1">
+                        <figure><img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1"></figure>
                         <p>A mana dos roles</p>
-                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user2" checked>
+                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1">
                     </li>
+
                     <li>
-                        <img src="src/imagens/enquanto_nao_tem_bd/foto3.svg" alt="foto de perfil do user1">
+                        <figure><img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1"></figure>
                         <p>A mana dos roles</p>
-                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user3" checked>
+                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1">
                     </li>
+
                     <li>
-                        <img src="src/imagens/enquanto_nao_tem_bd/foto4.svg" alt="foto de perfil do user1">
+                        <figure><img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1"></figure>
                         <p>A mana dos roles</p>
-                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user4" checked>
+                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1">
                     </li>
+
+                    <li>
+                        <figure><img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1"></figure>
+                        <p>A mana dos roles</p>
+                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1">
+                    </li>
+
+                    <li>
+                        <figure><img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1"></figure>
+                        <p>A mana dos roles</p>
+                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1">
+                    </li>
+
+                    <li>
+                        <figure><img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1"></figure>
+                        <p>A mana dos roles</p>
+                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1">
+                    </li>
+
+                    <li>
+                        <figure><img src="src/imagens/enquanto_nao_tem_bd/foto1.svg" alt="foto de perfil do user1"></figure>
+                        <p>A mana dos roles</p>
+                        <input type="checkbox" id="checkbox_convidado" name="convidados" value="user1">
+                    </li>
+
                 </ol>
                 <button type="submit" class="botao">Criar Evento<img src="src/imagens/icones/criar-colorido.svg" alt="criar"></button>
             </form>
-            <figure>
-                <img src="src/imagens/backgrounds/Criar-eventos-background.svg" alt="figuras ilustrativas bem coloridas">
-            </figure>
         </section>
     </main>
-    <footer>
-        <img src="src/imagens/icones/logo-footer.svg" alt="logo do Celebralize">
-        <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Criar_evento.html">Criar</a></li>
-            <li><a href="Editar_evento.html">Eventos</a></li>
-        </ol>
-        <p>© 2021 Celebralize. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
