@@ -434,28 +434,7 @@ input[type="checkbox"]:checked::before {
     font-size: 20px;
 }
 
-
-
-/* meus eventos  */
-
-.meus-eventos ol{
-    margin-top: 5em;
-    overflow: visible;
-    flex-wrap: wrap;
-}
-meu-evento
-.meus-eventos .card-evento li {
-    background-color: #7CCADC;
-    width: 19%;
-}
-
-.meus-eventos .card-evento li section h3{
-    border-bottom: #356773 solid 2px;
-}
-
-.meus-eventos .card-evento li section  .data-hora p{
-    color: #356773;
-}
+/*eventos convidados*/
 
 #eventos-convidados li{
     background-color: #D98080;
@@ -512,4 +491,27 @@ meu-evento
 destaque-login img{
     max-width: 540px;
     width: 40%;
+}
+
+
+
+
+/* meus eventos  */
+
+.meus-eventos ol{
+    margin-top: 5em;
+    overflow: visible;
+    flex-wrap: wrap;
+}
+
+.meus-eventos .card-evento li {
+    background-color: #7CCADC;
+    width: 19%;
+}
+.meus-eventos .card-evento li section h3{
+    border-bottom: #356773 solid 2px;
+}
+
+.meus-eventos .card-evento li section  .data-hora p{
+    color: #356773;
 }
