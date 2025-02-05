@@ -91,7 +91,7 @@ if (isset($_GET['delete'])) {
                     		</section>
                     		<div class="acoes">
                         		<a href="Editar_evento.php?id=<?= $evento['id'] ?>">Editar</a>
-                        		<a href="?delete=<?= $usuario['id'] ?>" onclick="return confirm('Tem certeza?')">Excluir</a>
+                        		<a href="?delete=<?= $evento['id'] ?>" onclick="return confirm('Tem certeza?')">Excluir</a>
                     		</div>
                 	</li>
 		        <?php endwhile; ?>
