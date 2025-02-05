@@ -11,6 +11,11 @@ O **Celebralize** foi criado como um projeto prático para aplicar os conceitos 
 - Configuração de servidores web.  
 - Gerenciamento de banco de dados relacional.    
 
+## Interface
+
+![Imagem da home do projeto.](./docs/readme-imagens/home.png)
+![Imagem da home do projeto.](docs/readme-imagens/login.png)
+
 ---
 
 ## Sobre o Curso
