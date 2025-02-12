@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Celebralize",
+			"path": "."
+		},
+		{
+			"name": "src",
+			"path": "../../Downloads/templates/src"
+		}
+	],
+	"settings": {}
+}
