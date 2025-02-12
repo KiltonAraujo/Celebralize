@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main class="criar-evento">
         <section>
             <form method="POST">
-                <h1>Criar <span class="colorido">Celebração</span></h1>
+                <h1>Criar <span class="colorido">Celebração</span> </h1>
 
                 <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuario_id']; ?>">
 
