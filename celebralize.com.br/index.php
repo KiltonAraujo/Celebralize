@@ -33,18 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Celebralize!</title>
 </head>
 <body>
-    <header>
-        <figure><img src="src/imagens/icones/celebralize.svg" alt="logo do Celebralize"></figure>
-        <nav>
-            <ol>
-                <li><a href="home.php"><img src="src/imagens/icones/home.svg" alt="home"></a></li>
-                <li><a href="Criar_evento.php"><img src="src/imagens/icones/criar-evento.svg" alt="crie um evento"></a></li>
-                <li><a href="Meus_eventos.php"><img src="src/imagens/icones/eventos.svg" alt="seus eventos"></a></li>
-                <li><a href="Eventos_convidados.php"><img src="src/imagens/icones/eventos-convidados.svg" alt="eventos que te convidaram"></a></li>
-                <li><a href="#"><img src="src/imagens/icones/sair-icon.svg" alt="sair"></a></li>
-            </ol>
-        </nav>
-    </header>
     <main class="criar-evento login">
         <section>
             <form method="POST">
@@ -62,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </section>
     </main>
     <footer>
-        <h1><img src="src/imagens/icones/celebralize.svg" alt="logo do Celebralize"> <span class="colorido">Celebralize</span></h1>
+        <h1><img src="<?= 'src/imagens/icones/celebralize.svg' ?>" alt="logo do Celebralize"> <span class="colorido">Celebralize</span></h1>
         <nav>
             <ol>
                 <li><a href="home.php">Home</a></li>
@@ -71,12 +59,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <li><a href="Eventos_convidados.php">Eventos</a></li>
             </ol>
         </nav>
-
         <ol class="sociais">
-            <li><a><img src="src/imagens/icones/linkedin.svg" alt="linkedin"></a></li>
-            <li><a><img src="src/imagens/icones/facebook.svg" alt="facebook"></a></li> 
-            <li><a><img src="src/imagens/icones/twitter.svg" alt="twitter/X"></a></li>
-            <li><a><img src="src/imagens/icones/instagram.svg" alt="instagram"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/linkedin.svg' ?>" alt="linkedin"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/facebook.svg' ?>" alt="facebook"></a></li> 
+            <li><a><img src="<?= 'src/imagens/icones/twitter.svg' ?>" alt="twitter/X"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/instagram.svg' ?>" alt="instagram"></a></li>
         </ol>
     </footer>
 </body>

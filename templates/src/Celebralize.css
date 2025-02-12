@@ -288,9 +288,8 @@ main #eventos-convidados ol::-webkit-scrollbar-thumb {
     padding-right: 0.5em;
 }
 /* Pagina de criação de evento */
-
 .criar-evento{
-    background-image: url(imagens/backgrounds/Criar-eventos-background.svg);
+    background-image: url("<?= 'imagens/backgrounds/Criar-eventos-background.svg' ?>");
     background-repeat: no-repeat;
     background-position: right center; /* Fixa na direita */
     background-size: auto 100%; /* Ajusta a altura e mantém a proporção */

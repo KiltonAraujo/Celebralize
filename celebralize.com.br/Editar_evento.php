@@ -62,15 +62,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Gerenciar Eventos</title>
 </head>
 <body>
-    <header>
-        <figure><img src="src/imagens/icones/celebralize.svg" alt="logo do Celebralize"></figure>
+<header>
+        <figure><img src="<?= 'src/imagens/icones/celebralize.svg' ?>" alt="logo do Celebralize"></figure>
         <nav>
             <ol>
-                <li><a href="home.php"><img src="src/imagens/icones/home.svg" alt="home"></a></li>
-                <li><a href="Criar_evento.php"><img src="src/imagens/icones/criar-evento.svg" alt="crie um evento"></a></li>
-                <li><a href="Meus_eventos.php"><img src="src/imagens/icones/eventos.svg" alt="seus eventos"></a></li>
-                <li><a href="Eventos_convidados.php"><img src="src/imagens/icones/eventos-convidados.svg" alt="eventos que te convidaram"></a></li>
-                <li><a href="logout.php"><img src="src/imagens/icones/sair-icon.svg" alt="sair"></a></li>
+                <li><a href="home.php"><img src="<?= 'src/imagens/icones/home.svg' ?>" alt="home"></a></li>
+                <li><a href="Criar_evento.php"><img src="<?= 'src/imagens/icones/criar-evento.svg' ?>" alt="crie um evento"></a></li>
+                <li><a href="Meus_eventos.php"><img src="<?= 'src/imagens/icones/eventos.svg' ?>" alt="seus eventos"></a></li>
+                <li><a href="Eventos_convidados.php"><img src="<?= 'src/imagens/icones/eventos-convidados.svg' ?>" alt="eventos que te convidaram"></a></li>
+                <li><a href="logout.php"><img src="<?= 'src/imagens/icones/sair-icon.svg' ?>" alt="sair"></a></li>
             </ol>
         </nav>
     </header>
@@ -95,12 +95,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 echo "<input type='checkbox' name='usuarios[]' value='{$row['id']}'> {$row['nome']}<br>";
             }
             ?>
-            <button type="submit" class="botao">Salvar alterações <img src="src/imagens/icones/criar-colorido.svg" alt="criar"></button>
+            <button type="submit" class="botao">Salvar alterações <img src="<?= 'src/imagens/icones/criar-colorido.svg' ?>" alt="criar"></button>
         </form>
     </main>
 
     <footer>
-        <h1><img src="src/imagens/icones/celebralize.svg" alt="logo do Celebralize"> <span class="colorido">Celebralize</span></h1>
+        <h1><img src="<?= 'src/imagens/icones/celebralize.svg' ?>" alt="logo do Celebralize"> <span class="colorido">Celebralize</span></h1>
         <nav>
             <ol>
                 <li><a href="home.php">Home</a></li>
@@ -109,12 +109,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <li><a href="Eventos_convidados.php">Eventos</a></li>
             </ol>
         </nav>
-
         <ol class="sociais">
-            <li><a href="#"><img src="src/imagens/icones/linkedin.svg" alt="linkedin"></a></li>
-            <li><a href="#"><img src="src/imagens/icones/facebook.svg" alt="facebook"></a></li>
-            <li><a href="#"><img src="src/imagens/icones/twitter.svg" alt="twitter/X"></a></li>
-            <li><a href="#"><img src="src/imagens/icones/instagram.svg" alt="instagram"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/linkedin.svg' ?>" alt="linkedin"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/facebook.svg' ?>" alt="facebook"></a></li> 
+            <li><a><img src="<?= 'src/imagens/icones/twitter.svg' ?>" alt="twitter/X"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/instagram.svg' ?>" alt="instagram"></a></li>
         </ol>
     </footer>
 </body>
