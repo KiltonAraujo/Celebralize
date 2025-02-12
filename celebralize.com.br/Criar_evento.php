@@ -47,21 +47,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="teste.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/x-icon" href="src/imagens/icones/celebralize.svg">
+    <link rel="icon" type="image/x-icon" href="<?= 'src/imagens/icones/celebralize.svg' ?>"
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Criar evento</title>
 </head>
 <body>
     <header>
-        <figure><img src="src/imagens/icones/celebralize.svg" alt="logo do Celebralize"></figure>
+        <figure><img src="<?= 'src/imagens/icones/celebralize.svg' ?>" alt="logo do Celebralize"></figure>
         <nav>
             <ol>
-                <li><a href="home.php"><img src="src/imagens/icones/home.svg" alt="home"></a></li>
-                <li><a href="Criar_evento.php"><img src="src/imagens/icones/criar-evento.svg" alt="crie um evento"></a></li>
-                <li><a href="Meus_eventos.php"><img src="src/imagens/icones/eventos.svg" alt="seus eventos"></a></li>
-                <li><a href="Eventos_convidados.php"><img src="src/imagens/icones/eventos-convidados.svg" alt="eventos que te convidaram"></a></li>
-                <li><a href="logout.php"><img src="src/imagens/icones/sair-icon.svg" alt="sair"></a></li>
+                <li><a href="home.php"><img src="<?= 'src/imagens/icones/home.svg' ?>" alt="home"></a></li>
+                <li><a href="Criar_evento.php"><img src="<?= 'src/imagens/icones/criar-evento.svg' ?>" alt="crie um evento"></a></li>
+                <li><a href="Meus_eventos.php"><img src="<?= 'src/imagens/icones/eventos.svg' ?>" alt="seus eventos"></a></li>
+                <li><a href="Eventos_convidados.php"><img src="<?= 'src/imagens/icones/eventos-convidados.svg' ?>" alt="eventos que te convidaram"></a></li>
+                <li><a href="logout.php"><img src="<?= 'src/imagens/icones/sair-icon.svg' ?>" alt="sair"></a></li>
             </ol>
         </nav>
     </header>
@@ -96,21 +96,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </section>
     </main>
     <footer>
-        <h1><img src="src/imagens/icones/celebralize.svg" alt="logo do Celebralize"> <span class="colorido">Celebralize</span></h1>
+        <h1><img src="<?= 'src/imagens/icones/celebralize.svg' ?>" alt="logo do Celebralize"> <span class="colorido">Celebralize</span></h1>
         <nav>
             <ol>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="Criar_evento.php">Criar</a></li>
                 <li><a href="Meus_eventos.php">Meus eventos</a></li>
-                <li><a href="Eventos_convidados.php.php">Eventos</a></li>
+                <li><a href="Eventos_convidados.php">Eventos</a></li>
             </ol>
         </nav>
-
         <ol class="sociais">
-            <li><a><img src="src/imagens/icones/linkedin.svg" alt="linkedin"></a></li>
-            <li><a><img src="src/imagens/icones/facebook.svg" alt="facebook"></a></li> 
-            <li><a><img src="src/imagens/icones/twitter.svg" alt="twitter/X"></a></li>
-            <li><a><img src="src/imagens/icones/instagram.svg" alt="instagram"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/linkedin.svg' ?>" alt="linkedin"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/facebook.svg' ?>" alt="facebook"></a></li> 
+            <li><a><img src="<?= 'src/imagens/icones/twitter.svg' ?>" alt="twitter/X"></a></li>
+            <li><a><img src="<?= 'src/imagens/icones/instagram.svg' ?>" alt="instagram"></a></li>
         </ol>
     </footer>
 </body>
