@@ -1,5 +1,7 @@
 # Celebralize
 
+## DNS http://celebralize.servehttp.com/
+
 O **Celebralize** é um projeto desenvolvido durante a disciplina de **Instalação e Configuração de Servidores** no curso técnico integrado de **Informática para a Internet** no **IFRN-CNAT**.  
 Este site tem como objetivo facilitar a criação e o gerenciamento de eventos entre amigos, permitindo a organização prática de encontros e compromissos sociais.
 
