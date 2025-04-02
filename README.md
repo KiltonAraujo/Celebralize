@@ -58,7 +58,9 @@ Este repositório contém:
 
 ## Autores
 
-### Kilton Jhonathan de Araújo  
+### Kilton J. Araújo 
+### Caua Henrique
+### Beatriz Maria 
 (Use o tema escuro para visualizar meus contatos!)  
 
 <a href="mailto:kilton.araujo@gmail.com" target="_blank"><img align="left" alt="Kilton J | Email" height="20px" src="https://github.com/KiltonAraujo/KiltonAraujo/raw/main/src/logos_google-gmail.png" /></a>
